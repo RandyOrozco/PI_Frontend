@@ -6,17 +6,20 @@ import { Component, OnInit, DoCheck, OnDestroy } from '@angular/core';
   templateUrl: './login.component.html',
 })
 export class LoginComponent {
+
   public titulo: string;
-  public bienvenida: string;
-  public txt_usuarioRegistrar: string; 
-  public txt_usuarioModificar: string; 
+
+	public usuario: any;
+	public usuarioId: any;
+
+
   constructor() {
-    this.titulo =
-      'Si cuenta con las credenciales de acceso puede ingresar al sistema';
-    this.bienvenida =
-      'Bienvenido a este espacio de información sobre catedráticos y cursos';
-    this.txt_usuarioRegistrar = 'Registrar Usuario';
-    this.txt_usuarioModificar = 'Modificar Usuario';
+this.titulo = "Iniciar Sesión"
+
+    this.usuario = {
+        "registroAcademico": "",
+        "clave": ""
+    };
     console.log('Se ha cargado el componente: login.component.ts');
   }
 
@@ -31,13 +34,5 @@ export class LoginComponent {
   ngOnDestroy(){
     console.log('OnDestroy ejecutado');
     
-  }
-
-  registrarUsuario() {
-    this.titulo = this.txt_usuarioRegistrar;
-  }
-
-  modificarUsuario() {
-    this.titulo = this.txt_usuarioModificar;
   }
 }

@@ -1,8 +1,16 @@
 <div class="login">
-  <h1>{{ titulo }}</h1>
-  <h2>{{ bienvenida }}</h2>
   <p>{{ titulo }}</p>
-  <button (click)="registrarUsuario()">{{ this.txt_usuarioRegistrar }}</button
-  >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <button (click)="modificarUsuario()">{{ this.txt_usuarioModificar }}</button>
+  <!-- <form #frmLogin="ngForm" (ngSubmit)="onSubmit(frmLogin)">
+	<p>
+		<label for="txtRegistro">Registro Académico</label><br>
+		<input type="text" name="txtRegistro" #txtRegistro="ngModel" [(ngModel)]="usuario.registroAcademico" required >
+		<span *ngIf="txtRegistro.touched && !txtRegistro.valid" >El nombre no es válido</span>
+	</p>
+	<p>
+		<label for="txtClave">Apellido</label><br>
+		<input type="text" name="txtClave" #txtClave="ngModel" [(ngModel)]="usuario.clave" required >
+		<span *ngIf="txtClave.touched && !txtClave.valid" >El trabajo no es válido</span>
+        <input type="submit" name="" value="Ingresar" [disabled]="!frmLogin.form.valid">
+	</p>
+  </form> -->
 </div>

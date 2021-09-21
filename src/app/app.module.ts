@@ -1,5 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
+
+import { routing, appRoutingProviders } from './app.routing';
+
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
@@ -12,6 +16,7 @@ import { CursousuarioComponent } from './cursousuario/cursousuario.component';
 import { PublicacionComponent } from './publicacion/publicacion.component';
 import { TopbarComponent } from './topbar/topbar.component';
 import { BottombarComponent } from './bottombar/bottombar.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -27,9 +32,10 @@ import { BottombarComponent } from './bottombar/bottombar.component';
     PublicacionComponent,
     TopbarComponent,
     BottombarComponent,
+    HomeComponent,
   ],
-  imports: [BrowserModule],
-  providers: [],
+  imports: [BrowserModule, FormsModule, routing],
+  providers: [appRoutingProviders],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
