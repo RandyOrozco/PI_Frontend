@@ -1,1 +1,44 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    background-color: aliceblue;
+    font-family: sans-serif;
+}
+.principal{
+    margin: auto;
+    width: 800px;
+    border: 3px solid black;
+    padding: 3px;
+}
+.floatClear{
+    float: none;
+}
+/*top bar*/
+.topbar{
+    text-align: center;
+    padding: 10px 10px;
+}
+.tituloPrincipal{
+    font-weight: bold;
+    font-size: larger;
+}
+.izquierda{
+    float: left;
+    text-align: left;
+    font-weight: bold;
+}
+.derecha{
+    float: right;
+    text-align: right;
+    font-weight: bold;
+}
+/*bottombar*/
+.bottombar{
+    text-align: center;
+    padding: 20px 0px;
+    font-size: small;
+}
+/*login*/
+.login{
+    text-align: center;
+    border: 3px solid green;
+}

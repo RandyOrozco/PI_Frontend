@@ -1,3 +1,11 @@
+# WebServer + Frontend
+Universidad de San Carlos de Guatemala
+Facultad de Ingeniería
+Practicas Iniciales
+
+Randy Mauricio Orozco Reyes
+200313243
+
 # Pifrontend
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.6.
