@@ -9,10 +9,13 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 //npm install rxjs-compat --save //esta es la funcional
 import { Observable } from 'rxjs/Observable';
 
+//importar todos los modelos 
+import UsuarioComponent from '../usuario/usuario.component';
+
 //para las pruebas de consumo de servicios externos se utilziará el servicio
 //https://reqres.in/ que es una api para hacer pruebas
 @Injectable()
-export class PeticionServicio{
+export class ApiCapaMediaService{
 
 	public url: string;
 

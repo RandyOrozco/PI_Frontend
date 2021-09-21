@@ -9,6 +9,7 @@ body{
     display: table;
 }
 .principal{
+    background-color: white;
     margin: auto;
     width: 800px;
     border: 3px solid black;
@@ -26,6 +27,9 @@ body{
 .topbar{
     text-align: center;
     padding: 10px 10px;
+}
+.activo{
+    font-weight: bold;
 }
 .tituloPrincipal{
     font-weight: bold;
@@ -47,6 +51,15 @@ body{
     padding: 20px 0px;
     font-size: small;
 }
+/*home*/
+.homeTitulo{
+    text-align: center;
+}
+.escudoUSAC{
+    height: 150px;
+    width: 150px;
+}
+
 /*login*/
 .login{
     text-align: center;

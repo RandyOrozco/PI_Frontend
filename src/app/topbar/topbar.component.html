@@ -1,5 +1,6 @@
 <div class="topbar">
-  <div class="tituloPrincipal">Universidad de San Carlos de Guatemala</div>
+  <div class="tituloPrincipal"><img class="USACTricentenaria" src="../../assets/usactricentenaria.jpg"></div>
+  <!-- <div class="tituloPrincipal">Universidad de San Carlos de Guatemala</div> -->
   <div>
     <div class="izquierda">
       Faultad de Ingeniería<br>
@@ -10,5 +11,14 @@
       Randy Mauricio Orozco Reyes
     </div>
     <div class="clearfix"></div>
+    <!-- <div><a href="/publicacion">Publicaciones</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/usuario">Perfil</a></div> -->
+    <nav>
+      <a [routerLink]="['/publicacion']" [routerLinkActive]="['activo']">Publicaciones</a>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a [routerLink]="['/usuario/000']" [routerLinkActive]="['activo']">Perfil</a>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a [routerLink]="['/home/0']" [routerLinkActive]="['activo']">Cerrar Sesión</a>
+    </nav>
+    <hr>
   </div>
 </div>
